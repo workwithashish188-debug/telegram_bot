@@ -247,7 +247,7 @@ scheduler = BlockingScheduler(timezone=IST)
 
 scheduler.add_job(
     run_signal_check,
-    trigger=CronTrigger(minute="0,3", second="5", timezone=IST),
+    trigger=CronTrigger(minute="0,30", second="5", timezone=IST),
     misfire_grace_time=60,
     max_instances=1
 )
